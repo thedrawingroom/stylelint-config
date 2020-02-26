@@ -14,6 +14,6 @@ Releasing the project requires these steps:
 
 
 
-[npm-url]: https://www.npmjs.com/package/@leemillward/stylelint-config
-[release-scripts-url]: https://github.com/leemillward/stylelint-config/blob/master/package.json#L48-L50
-[github-release-url]: https://github.com/leemillward/stylelint-config/releases
+[npm-url]: https://www.npmjs.com/package/@thedrawingroom/stylelint-config
+[release-scripts-url]: https://github.com/thedrawingroom/stylelint-config/blob/master/package.json#L48-L50
+[github-release-url]: https://github.com/thedrawingroom/stylelint-config/releases

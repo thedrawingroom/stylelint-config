@@ -1,7 +1,7 @@
 // http://eslint.org/docs/user-guide/configuring#configuring-rules
 module.exports = {
     extends: [
-        '@leemillward/eslint-config' // Extending the AirBnB ES2015 config: https://www.npmjs.com/package/eslint-config-airbnb
+        '@thedrawingroom/eslint-config' // Extending the AirBnB ES2015 config: https://www.npmjs.com/package/eslint-config-airbnb
     ],
     env: {
         browser: true,

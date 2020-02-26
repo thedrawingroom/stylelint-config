@@ -1,5 +1,5 @@
 {
-    "name": "@leemillward/stylelint-config",
+    "name": "@thedrawingroom/stylelint-config",
     "version": "1.0.0",
     "description": "Shareable Stylelint config",
     "keywords": [
@@ -11,7 +11,7 @@
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/leemillward/stylelint-config"
+        "url": "https://github.com/thedrawingroom/stylelint-config"
     },
     "main": "index.js",
     "files": [
@@ -25,7 +25,7 @@
         "@babel/cli": "^7.2.0",
         "@babel/core": "^7.2.0",
         "@babel/preset-env": "^7.2.0",
-        "@leemillward/eslint-config": "^1.0.0",
+        "@thedrawingroom/eslint-config": "^1.0.0",
         "babel-tape-runner": "^3.0.0",
         "eslint": "^6.8.0",
         "eslint-plugin-import": "^2.20.1",
