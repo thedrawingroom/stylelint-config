@@ -19,7 +19,7 @@ const invalidScss = `// scss features not lintable for declaration order in styl
 `;
 
 test('Declaration order scss', t => {
-    function checkResult (result) {
+    function checkResult(result) {
         t.equal(result.warnings().length, 4, 'flags 4 warnings');
         const warningsArray = Object.values(result.warnings()).map(x => x.text);
         t.is(
@@ -52,7 +52,7 @@ test('Declaration order scss', t => {
         );
     }
 
-    function logError (err) {
+    function logError(err) {
         console.log(err.stack);
     }
 

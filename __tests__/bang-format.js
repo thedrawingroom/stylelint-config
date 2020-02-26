@@ -12,7 +12,7 @@ const invalidScss = `.bangformat {
 `;
 
 test('Bang format scss', t => {
-    function checkResult (result) {
+    function checkResult(result) {
         t.equal(result.warnings().length, 3, 'flags 3 warning');
         t.is(
             result.warnings()[0].text,
@@ -31,7 +31,7 @@ test('Bang format scss', t => {
         );
     }
 
-    function logError (err) {
+    function logError(err) {
         console.log(err.stack);
     }
 

@@ -16,7 +16,7 @@ const invalidScss = `.one .two .three > .four .five {
 `;
 
 test('Selector depth scss', t => {
-    function checkResult (result) {
+    function checkResult(result) {
         t.equal(result.warnings().length, 2, 'flags 2 warning');
         t.is(
             result.warnings()[0].text,
@@ -30,7 +30,7 @@ test('Selector depth scss', t => {
         );
     }
 
-    function logError (err) {
+    function logError(err) {
         console.log(err.stack);
     }
 

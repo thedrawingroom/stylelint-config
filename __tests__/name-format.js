@@ -20,7 +20,7 @@ $myVar: 10px;
 `;
 
 test('Name format scss', t => {
-    function checkResult (result) {
+    function checkResult(result) {
         t.equal(result.warnings().length, 4, 'flags 4 warning');
         const warningsArray = Object.values(result.warnings()).map(x => x.text);
         t.is(
@@ -53,7 +53,7 @@ test('Name format scss', t => {
         );
     }
 
-    function logError (err) {
+    function logError(err) {
         console.log(err.stack);
     }
 

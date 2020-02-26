@@ -10,7 +10,7 @@ const invalidScss = `.leadingzero {
 `;
 
 test('Leading zero scss', t => {
-    function checkResult (result) {
+    function checkResult(result) {
         t.equal(result.warnings().length, 1, 'flags 1 warning');
         t.is(
             result.warnings()[0].text,
@@ -19,7 +19,7 @@ test('Leading zero scss', t => {
         );
     }
 
-    function logError (err) {
+    function logError(err) {
         console.log(err.stack);
     }
 

@@ -326,11 +326,11 @@ $spaceaftervariblename: #f00;
 `;
 
 test('Valid scss', t => {
-    function checkResult (result) {
+    function checkResult(result) {
         t.equal(result.warnings().length, 0, 'flags 0 warning');
     }
 
-    function logError (err) {
+    function logError(err) {
         console.log(err.stack);
     }
 

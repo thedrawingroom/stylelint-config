@@ -24,7 +24,7 @@ const invalidScss = `@-webkit-keyframes anim {
 `;
 
 test('Vendor prefixes scss', t => {
-    function checkResult (result) {
+    function checkResult(result) {
         t.equal(result.warnings().length, 4, 'flags 4 warning');
         t.is(
             result.warnings()[0].text,
@@ -48,7 +48,7 @@ test('Vendor prefixes scss', t => {
         );
     }
 
-    function logError (err) {
+    function logError(err) {
         console.log(err.stack);
     }
 
