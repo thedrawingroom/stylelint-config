@@ -7,8 +7,8 @@ import config from '..';
 const invalidScss = `// scss features not lintable for declaration order in stylelint
 .declarationorder {
     p {
-        color: #f00;
         background-color: #0f0;
+        color: #f00;
     }
 
     color: #f00;
@@ -24,7 +24,7 @@ test('Declaration order scss', t => {
         const warningsArray = Object.values(result.warnings()).map(x => x.text);
         t.is(
             warningsArray.includes(
-                'Expected background-color to come before color (order/properties-alphabetical-order)'
+                'Expected "color" to come before "background-color" in group "color" (order/properties-order)'
             ),
             true,
             'correct warning text'

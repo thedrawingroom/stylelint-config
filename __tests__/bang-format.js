@@ -5,8 +5,8 @@ import test from 'tape';
 import config from '..';
 
 const invalidScss = `.bangformat {
-    background-color: #000! important; // Bang format test
     color: #000!important; // Bang format test
+    background-color: #000! important; // Bang format test
 }
 
 `;

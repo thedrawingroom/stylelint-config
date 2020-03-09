@@ -5,8 +5,8 @@ import test from 'tape';
 import config from '..';
 
 const invalidScss = `.trailingsemicolon {
-    background-color: #fff ;
-    color: #fff
+    color: #fff ;
+    background-color: #fff
 }
 `;
 

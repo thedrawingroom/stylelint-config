@@ -284,8 +284,8 @@ $spaceaftervariblename: #f00;
 
 // TrailingSemicolon test
 .trailingsemicolon {
-    background-color: #fff;
     color: #fff;
+    background-color: #fff;
 }
 
 // TrailingZero test

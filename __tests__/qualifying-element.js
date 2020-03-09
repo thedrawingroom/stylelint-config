@@ -23,7 +23,7 @@ a[href='place'] {
 
 test('Qualifying element scss', t => {
     function checkResult(result) {
-        t.equal(result.warnings().length, 5, 'flags 5 warning');
+        t.equal(result.warnings().length, 2, 'flags 2 warning');
         t.is(
             result.warnings()[0].text,
             'Expected "div#thing" to have no more than 0 ID selectors (selector-max-id)',
@@ -34,28 +34,13 @@ test('Qualifying element scss', t => {
             'Unexpected qualifying type selector (selector-no-qualifying-type)',
             'correct warning text'
         );
-        t.is(
-            result.warnings()[2].text,
-            'Unexpected qualifying type selector (selector-no-qualifying-type)',
-            'correct warning text'
-        );
-        t.is(
-            result.warnings()[3].text,
-            'Unexpected qualifying type selector (selector-no-qualifying-type)',
-            'correct warning text'
-        );
-        t.is(
-            result.warnings()[4].text,
-            'Unexpected qualifying type selector (selector-no-qualifying-type)',
-            'correct warning text'
-        );
     }
 
     function logError(err) {
         console.log(err.stack);
     }
 
-    t.plan(6);
+    t.plan(3);
 
     postcss()
         .use(stylelint({ code: invalidScss, config }))
